@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box {
+    flex: 1;
+    min-width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid white;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+
+}
+
+
+@media (max-width: 1000px) {
+    .box {
+        min-width: 50%;
+       
+    }
+}
+@media (max-width: 700px) {
+    .box {
+        min-width: 100%;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-color: purple;"></div>
+        <div class="box" style="background-color: blue;"></div>
+        <div class="box" style="background-color: yellow;"></div>
+        <div class="box" style="background-color: red;"></div>
+    </div>
+</body>
+</html>
+
